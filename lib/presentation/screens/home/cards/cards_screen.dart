@@ -190,19 +190,23 @@ class _CardType4 extends StatelessWidget {
       child: Stack(
         children: [
           Image.network('http://picsum.photos/id/${elevation.toInt()}/600/350',
-          fit: BoxFit.cover,),
+          fit: BoxFit.cover),
+
+
           Align(
             alignment: Alignment.topRight,
-      
+            
             child: Container(
-              
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(bottomLeft:  Radius.circular(20))
+              ),
               child: IconButton(
                 icon: const Icon(Icons.more_vert_outlined),
                 onPressed: () {},
               ),
             ),
           ),
-      
        
         ],
       ),
